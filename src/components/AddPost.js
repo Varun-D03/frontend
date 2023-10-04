@@ -20,7 +20,7 @@ function AddPost() {
 
     useEffect(()=>{
         if(url){
-            fetch("http:localhost:5050/addpost",{
+            fetch("http:52.65.227.234:5050/addpost",{
                 method: "post",
                 headers:{
                     "Content-Type":"application/json",
