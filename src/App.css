@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
 :root {
-  --color1: #ed6663;
-  --color2: #ffd5cd;
+  --color1: #263224;
+  --color2: #ebe6e6;
 }
 body{
     background-color: var(--color2);
