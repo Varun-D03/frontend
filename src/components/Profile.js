@@ -10,7 +10,7 @@ function Profile() {
   const {state, dispatch} = useContext(userContext)
   //  var id = JSON.parse(localStorage.getItem('user'))._id
     useEffect(()=>{
-      fetch('/profile',{
+      fetch('http://52.65.227.234:5050/profile',{
         method: "post",
         headers:{
             "Content-Type":"application/json",
@@ -34,7 +34,7 @@ function Profile() {
     },[])
 
    const deletePost=(postId)=>{
-      fetch(`/deletepost/${postId}`,{
+      fetch(`http://52.65.227.234:5050/deletepost/${postId}`,{
         method: "delete",
         headers: {
           "Authorization": "token "+localStorage.getItem("jwt")
